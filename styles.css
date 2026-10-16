@@ -60,7 +60,7 @@ img { display: block; max-width: 100%; }
 .nav-contact span { margin-left: 7px; color: var(--accent); }
 .menu-toggle { display: none; }
 
-.hero { position: relative; display: grid; min-height: min(790px, calc(100svh - 73px)); grid-template-columns: 1.08fr .92fr; align-items: center; gap: clamp(36px, 7vw, 94px); padding-top: 70px; padding-bottom: 110px; isolation: isolate; }
+.hero { position: relative; overflow-x: clip; display: grid; min-height: min(790px, calc(100svh - 73px)); grid-template-columns: 1.08fr .92fr; align-items: center; gap: clamp(36px, 7vw, 94px); padding-top: 70px; padding-bottom: 110px; isolation: isolate; }
 .hero::before { position: absolute; z-index: -2; top: -18%; right: -16%; width: 82%; height: 120%; content: ""; background: radial-gradient(ellipse at 60% 45%, rgba(42, 63, 78, .28), transparent 62%); pointer-events: none; }
 .hero-grid { position: absolute; z-index: -1; top: 8%; right: -6%; width: 69%; height: 85%; opacity: .17; background-image: linear-gradient(rgba(114, 221, 242, .1) 1px, transparent 1px), linear-gradient(90deg, rgba(114, 221, 242, .1) 1px, transparent 1px); background-size: 56px 56px; mask-image: radial-gradient(ellipse, black, transparent 72%); }
 .hero-orbit { position: absolute; z-index: -1; top: 3%; right: -12%; width: min(65vw, 800px); opacity: .33; overflow: visible; animation: orbit-drift 28s linear infinite; }
